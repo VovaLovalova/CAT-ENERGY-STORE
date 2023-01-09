@@ -1,0 +1,124 @@
+.legend__title {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #444444;
+  position: absolute;
+  width: 88px;
+  background-color: #eaeaea;
+  top: 52px;
+  left: 22px;
+}
+
+.legend__information {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  outline: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: 124px;
+  height: 40px;
+  padding-top: 14px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.legend__expense {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 20px;
+}
+
+.legend__weight,
+.legend__time {
+  position: relative;
+}
+
+.legend__wrapper {
+  margin-bottom: 11px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .legend__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .legend__title {
+    max-width: 80px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .legend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .legend__wrapper {
+    width: 366px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .legend__information {
+    font-size: 30px;
+    line-height: 37px;
+    width: 162px;
+    padding-bottom: 20px;
+    height: 38px;
+  }
+
+  .legend__title {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    width: 130px;
+    top: 71px;
+    left: 16px;
+  }
+
+  .legend__expense {
+    font-size: 20px;
+    line-height: 28px;
+    width: 172px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .legend {
+    flex-direction: column;
+    width: 366px;
+    align-items: center;
+  }
+
+  .legend__expense {
+    width: 100%;
+    text-align: center;
+  }
+
+  .legend__title {
+    background-color: #f2f2f2;
+    top: 68px;
+  }
+
+  .legend__wrapper {
+    margin-bottom: 24px;
+  }
+}

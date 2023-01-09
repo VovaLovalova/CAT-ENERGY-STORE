@@ -1,0 +1,242 @@
+.programm-type {
+  background-color: #ffffff;
+  padding: 20px 20px;
+}
+
+.programm-type__item {
+  background-color: #f2f2f2;
+  padding: 30px 20px 20px 20px;
+}
+
+.programm-type__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.programm-type__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  margin-left: 72px;
+  margin-bottom: 30px;
+  padding: 0;
+  position: relative;
+}
+
+.programm-type__title::before {
+  content: "";
+  position: absolute;
+  background-color: #68b738;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  left: -70px;
+  top: -4px;
+}
+
+.programm-type__title--slim::after {
+  content: "";
+  position: absolute;
+  background-image: url("..//..//img/cat_slim.svg");
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 50px;
+  left: -62px;
+  top: -6px;
+}
+
+.programm-type__title--pro::after {
+  content: "";
+  position: absolute;
+  background-image: url("..//..//img/cat_pro.svg");
+  background-repeat: no-repeat;
+  width: 68px;
+  height: 28px;
+  left: -79px;
+  top: 6px;
+}
+
+.programm-type__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.programm-type__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.programm-type__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+}
+
+.programm-type__link::after {
+  content: "";
+  position: absolute;
+  background-image: url("..//img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position-x: -8px;
+  width: 24px;
+  height: 12px;
+  left: 102px;
+  top: 6px;
+}
+
+.programm-type__link:hover::after {
+  width: 32px;
+  background-position-x: 0;
+}
+
+.programm-type__link:active {
+  opacity: 0.3;
+}
+
+.programm-type__link:active::after {
+  width: 32px;
+  background-position-x: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .programm-type {
+    width: 708px;
+    margin: 0 auto 44px;
+    padding: 0 20px;
+  }
+
+  .programm-type__item {
+    padding: 78px 316px 56px 52px;
+  }
+
+  .programm-type__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .programm-type__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+    margin-left: 0;
+  }
+
+  .programm-type__title::before {
+    width: 200px;
+    height: 200px;
+    left: 394px;
+    top: 16px;
+  }
+
+  .programm-type__title--slim::after {
+    width: 140px;
+    height: 194px;
+    background-size: cover;
+    left: 424px;
+    top: 4px;
+  }
+
+  .programm-type__title--pro::after {
+    width: 268px;
+    height: 112px;
+    background-size: cover;
+    left: 360px;
+    top: 56px;
+  }
+
+  .programm-type__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 52px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .programm-type__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .programm-type__link::after {
+    left: 132px;
+    top: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programm-type {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    padding: 0;
+  }
+
+  .programm-type__list {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    column-gap: 80px;
+  }
+
+  .programm-type__item {
+    padding: 76px 52px 60px 52px;
+  }
+
+  .programm-type__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 74px;
+    margin-left: 162px;
+  }
+
+  .programm-type__title--slim::after {
+    width: 70px;
+    height: 98px;
+    background-size: cover;
+    left: -146px;
+    top: -36px;
+  }
+
+  .programm-type__title--pro::after {
+    width: 134px;
+    height: 56px;
+    background-size: cover;
+    left: -182px;
+    top: -10px;
+  }
+
+  .programm-type__description {
+    margin-bottom: 26px;
+    width: 480px;
+  }
+
+  .programm-type__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .programm-type__title::before {
+    width: 100px;
+    height: 100px;
+    left: -162px;
+    top: -31px;
+  }
+}

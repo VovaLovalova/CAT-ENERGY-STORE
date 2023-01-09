@@ -1,0 +1,35 @@
+.product-description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  width: 142px;
+  border: none;
+}
+
+.product-description__value {
+  text-align: right;
+}
+
+@media (min-width: @tablet-width) {
+  .product-description {
+    font-size: 16px;
+    line-height: 16px;
+    width: 250px;
+    border-collapse: collapse;
+  }
+
+  .product-description__feature,
+  .product-description__value {
+    height: 32px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-description {
+    width: 170px;
+  }
+}

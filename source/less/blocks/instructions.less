@@ -1,0 +1,208 @@
+.instructions {
+  background-color: #ffffff;
+  padding: 0 20px 42px;
+  margin: 0;
+}
+
+.instructions__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 38px;
+  padding: 0;
+}
+
+.instructions__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.instructions__description-first,
+.instructions__description-second,
+.instructions__description-third,
+.instructions__description-fourth {
+  display: none;
+}
+
+.instructions__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.instructions__item {
+  margin: 0;
+  padding: 0;
+  padding-left: 80px;
+  position: relative;
+}
+
+.instructions__item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.instructions__item::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  left: 0;
+}
+
+.instructions__item--leaf::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 28px;
+  background-image: url("..//..//img/leaf.svg");
+  background-repeat: no-repeat;
+  top: 16px;
+  left: 18px;
+}
+
+.instructions__item--boiling::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 32px;
+  background-image: url("..//..//img/boiling.svg");
+  background-repeat: no-repeat;
+  top: 16px;
+  left: 15px;
+}
+
+.instructions__item--cutlery::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 30px;
+  background-image: url("..//..//img/cutlery.svg");
+  background-repeat: no-repeat;
+  top: 16px;
+  left: 18px;
+}
+
+.instructions__item--scales::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 33px;
+  background-image: url("..//..//img/scales.svg");
+  background-repeat: no-repeat;
+  top: 16px;
+  left: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .instructions {
+    width: 708px;
+    margin: 0 auto 43px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .instructions__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
+
+  .instructions__list {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    column-gap: 154px;
+    row-gap: 91px;
+  }
+
+  .instructions__item {
+    padding: 0;
+    padding-top: 82px;
+  }
+
+  .instructions__item::before {
+    top: 0;
+    width: 80px;
+    height: 80px;
+  }
+
+  .instructions__item--leaf::after,
+  .instructions__item--boiling::after,
+  .instructions__item--cutlery::after,
+  .instructions__item--scales::after {
+    top: 26px;
+    left: 26px;
+  }
+
+  .instructions__description {
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    z-index: 2;
+    margin-top: 30px;
+  }
+
+  .instructions__description-first,
+  .instructions__description-second,
+  .instructions__description-third,
+  .instructions__description-fourth {
+    display: block;
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    top: -40px;
+  }
+
+  .instructions__description-first {
+    right: 6px;
+  }
+
+  .instructions__description-second {
+    right: -14px;
+  }
+
+  .instructions__description-third {
+    right: -17px;
+  }
+
+  .instructions__description-fourth {
+    right: -19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .instructions {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 82px;
+    padding: 0;
+    border: none;
+  }
+
+  .instructions__list {
+    display: grid;
+    grid-template-columns: 230px 230px 230px 230px;
+    column-gap: 94px;
+  }
+
+  .instructions__title {
+    margin-bottom: 72px;
+  }
+
+  .instructions__description {
+    width: 250px;
+  }
+}

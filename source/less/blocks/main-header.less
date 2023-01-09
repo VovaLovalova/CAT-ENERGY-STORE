@@ -1,0 +1,26 @@
+.main-header {
+  width: 320px;
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 108px;
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 168px;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}

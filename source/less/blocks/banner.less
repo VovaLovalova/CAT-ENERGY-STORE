@@ -1,0 +1,102 @@
+.banner {
+  background-image: url("..//img/cat-carrier.jpg");
+  width: 280px;
+  height: 290px;
+  position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("..//..//img/cat-carrier@2x.png");
+    background-size: 280px auto;
+  }
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  background-image: url("..//..//img/gift.svg");
+  width: 78px;
+  height: 80px;
+  left: 101px;
+  top: 57px;
+}
+
+.banner__wrapper {
+  background-color: rgba(104, 183, 56, 0.85);
+  margin: 0;
+  padding: 170px 58px 28px;
+}
+
+.banner__title {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .banner {
+    background-image: url("..//..//img/cat-carrier-tablet.png");
+    width: 708px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 708px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("..//..//img/cat-carrier-tablet@2x.png");
+      background-size: 708px auto;
+    }
+  }
+
+  .banner::before {
+    left: 78px;
+    top: 58px;
+  }
+
+  .banner__wrapper {
+    background-color: rgba(104, 183, 56, 0.85);
+    height: 200px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner__title {
+    padding: 70px 124px 70px 422px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner {
+    background-image: url("..//..//img/cat-carrier-desktop.png");
+    width: 246px;
+    height: 288px;
+    background-repeat: no-repeat;
+    background-size: 246px auto;
+    margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("..//..//img/cat-carrier-desktop@2x.png");
+      background-size: 246px auto;
+    }
+  }
+
+  .banner::before {
+    left: 84px;
+    top: 56px;
+  }
+
+  .banner__wrapper {
+    background-color: rgba(104, 183, 56, 0.85);
+    width: 246px;
+    height: 290px;
+  }
+
+  .banner__title {
+    padding: 184px 42px 42px 42px;
+    margin: 0;
+    text-align: center;
+  }
+}

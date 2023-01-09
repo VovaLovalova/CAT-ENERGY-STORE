@@ -1,0 +1,93 @@
+.pet {
+  margin: 0;
+  padding: 0 20px 22px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.pet__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pet__item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pet__item:not(:last-child) {
+  margin: 0;
+  padding-bottom: 12px;
+}
+
+.pet__field {
+  height: 43px;
+  border: 1px solid #e7e7e7;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.pet__field::-webkit-outer-spin-button,
+.pet__field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.pet__field[type="number"] {
+  appearance: textfield;
+}
+
+.pet__label {
+  white-space: nowrap;
+  margin-right: 14px;
+}
+
+.pet__field:hover {
+  outline: 1px solid #cdcdcd;
+}
+
+.pet__field:focus {
+  outline: 2px solid #444444;
+}
+
+
+@media (min-width: @tablet-width) {
+  .pet {
+    padding: 0;
+    border: none;
+    margin-bottom: 74px;
+  }
+
+  .pet__label {
+    margin-right: 19px;
+  }
+
+  .pet__field {
+    height: 48px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 16px;
+    padding-right: 14px;
+  }
+
+  .pet__item:not(:last-child) {
+    padding-bottom: 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .pet {
+    margin-bottom: 71px;
+  }
+}
